@@ -1,0 +1,11 @@
+<h3>Cart</h3>
+
+<p>
+    <a routerLink="/shipping">Shipping Prices</a>
+</p>
+
+<p *ngIf="items.length<=0">cart is empty</p>
+<div class="cart-item" *ngFor="let item of items">
+    <span>{{ item.name }}</span>
+    <span>{{ item.price | currency }}</span>
+</div>
