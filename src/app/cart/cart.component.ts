@@ -8,6 +8,6 @@ import { Product } from '../products';
   styleUrl: './cart.component.css'
 })
 export class CartComponent {
-constructor(private cartService: CartService){}
-items: Product[]=this.cartService.getItems();
+  constructor(private cartService: CartService) { }
+  items: Product[] = this.cartService.getItems();
 }
